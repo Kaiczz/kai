@@ -14,11 +14,6 @@
       font-weight: bold;
     }
 
-    #cutom-button img {
-      width: 10px;
-      text-align: center;
-    }
-
     /* Add animation CSS */
     .animated-button {
       transition: transform 0.2s ease-in-out;
@@ -26,63 +21,67 @@
       margin-top: 10px;
     }
 
-
     .animated-button:hover {
       transform: scale(1.1);
     }
 
     /* Keyframes for left animation */
-@keyframes leftAnimation {
-  0%, 100% {
-    opacity: 1;
-    transform: translateX(-50%);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+    @keyframes leftAnimation {
+      0%, 100% {
+        opacity: 1;
+        transform: translateX(-50%);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
-/* Keyframes for right animation */
-@keyframes rightAnimation {
-  0%, 100% {
-    opacity: 1;
-    transform: translateX(50%);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+    /* Keyframes for right animation */
+    @keyframes rightAnimation {
+      0%, 100% {
+        opacity: 1;
+        transform: translateX(50%);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
-/* Apply the animations to the corresponding elements */
-.left-animation {
-  white-space: nowrap;
-  animation: leftAnimation 4s linear infinite;
-}
+    /* Apply the animations to the corresponding elements */
+    .left-animation {
+      white-space: nowrap;
+      animation: leftAnimation 4s linear infinite;
+    }
 
-.right-animation {
-  white-space: nowrap;
-  animation: rightAnimation 4s linear infinite;
-}
+    .right-animation {
+      white-space: nowrap;
+      animation: rightAnimation 4s linear infinite;
+    }
 
-@keyframes colorchange {
-    0% {
+    @keyframes colorchange {
+      0% {
         color: #fff; 
-    }
-    25% {
+      }
+      25% {
         color: #32c8da;
-    }
-    50% {
+      }
+      50% {
         color: #3d6acc; 
-    }
-    100% {
+      }
+      100% {
         color: #cc3dbb;
-    }
-    100% {
+      }
+      100% {
         color: pink; 
+      }
     }
-}
+
+    /* Center the logo button */
+    .center-logo {
+      text-align: center;
+    }
   </style>
   <title>Top up site</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
@@ -105,16 +104,16 @@
     </center>
   </h2>
 
-  <h3 style="text-align: center;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-      <div>
-        <a href="https://www.codashop.com/en-ph" style="text-decoration: none;">
-          <button class="animated-button" style="background-color: #000000; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive;">
-            <img src="https://gcdnb.pbrd.co/images/EDfqpegdtHoN.png" alt="Your Logo" style="width: 200px;" />
-          </button>
-        </a>
-      </div>
-      <div class="left-animation">
+  <div class="center-logo">
+    <a href="https://www.codashop.com/en-ph" style="text-decoration: none;">
+      <button class="animated-button" style="background-color: #000000; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px auto;">
+        <img src="https://gcdnb.pbrd.co/images/EDfqpegdtHoN.png" alt="Your Logo" style="width: 200px; display: block; margin: 0 auto;" />
+      </button>
+    </a>
+  </div>
+  
+
+  <div class="left-animation">
         <a href="https://www.codashop.com/en-ph/mobile-legends" style="text-decoration: none;">
           <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
             <span style="   -webkit-animation:colorchange 1s infinite alternate; ">MOBILE LEGENDS</span>
@@ -150,6 +149,7 @@
         </a>
       </div>
     </div>
+
 
   <p style="color: red; font-size: 25px;"></p>
 </body>
