@@ -66,14 +66,31 @@
   animation: rightAnimation 4s linear infinite;
 }
 
+@keyframes colorchange {
+    0% {
+        color: #fff; 
+    }
+    25% {
+        color: #32c8da;
+    }
+    50% {
+        color: #3d6acc; 
+    }
+    100% {
+        color: #cc3dbb;
+    }
+    100% {
+        color: pink; 
+    }
+}
   </style>
-  <title>This is a title</title>
+  <title>Top up site</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
 </head>
 
 <body>
   <h1>
-    <p style="font-family: 'Friz Quadrata', sans-serif;">
+    <p style="font-family: 'Friz Quadrata', animated-button;">
       <font color="yellow">
         <marquee direction="right" loop="90">WELCOME TO TOP UP SITE!</marquee>
       </font>
@@ -100,35 +117,35 @@
       <div class="left-animation">
         <a href="https://www.codashop.com/en-ph/mobile-legends" style="text-decoration: none;">
           <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
-            MOBILE LEGENDS
+            <span style="   -webkit-animation:colorchange 1s infinite alternate; ">MOBILE LEGENDS</span>
           </button>
         </a>
       </div>
       <div class="right-animation">
         <a href="https://www.codashop.com/en-ph/call-of-duty-mobile-shells-voucher" style="text-decoration: none;">
           <button class="animated-button" style="background-color: #ffffff; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
-            CALL OF DUTY
+         <span style="-webkit-animation:colorchange 1s infinite alternate;">CALL OF DUTY
           </button>
         </a>
       </div>
       <div class="left-animation">
         <a href="https://www.codashop.com/en-ph/league-of-legends-wild-rift" style="text-decoration: none;">
           <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
-            WILD RIFT
+           <span style="-webkit-animation:colorchange 1s infinite alternate;"> WILD RIFT
           </button>
         </a>
       </div>
       <div class="right-animation">
         <a href="https://www.codashop.com/en-ph/farlight-84" style="text-decoration: none;">
           <button class="animated-button" style="background-color: #ffffff; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
-            FARLIGHT 84
+          <span style="-webkit-animation:colorchange 1s infinite alternate;"> FARLIGHT 84
           </button>
         </a>
       </div>
       <div class="left-animation">
         <a href="https://www.codashop.com/en-ph/clash-royale" style="text-decoration: none;">
           <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
-            CLASH ROYALE
+         <span style="-webkit-animation:colorchange 1s infinite alternate;">  CLASH ROYALE
           </button>
         </a>
       </div>
