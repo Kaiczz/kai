@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-size: 20px;
+      background: url('https://i.pinimg.com/originals/70/dc/6d/70dc6d52f887888ac7e6ae705cfe6a95.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    #cutom-button img {
+      width: 10px;
+      text-align: center;
+    }
+
+    /* Add animation CSS */
+    .animated-button {
+      transition: transform 0.2s ease-in-out;
+      margin-bottom: 20px; /* Add margin to create space between buttons */
+      margin-top: 10px;
+    }
+
+
+    .animated-button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Keyframes for left animation */
+@keyframes leftAnimation {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for right animation */
+@keyframes rightAnimation {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animations to the corresponding elements */
+.left-animation {
+  white-space: nowrap;
+  animation: leftAnimation 4s linear infinite;
+}
+
+.right-animation {
+  white-space: nowrap;
+  animation: rightAnimation 4s linear infinite;
+}
+
+  </style>
+  <title>This is a title</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+</head>
+
+<body>
+  <h1>
+    <p style="font-family: 'Friz Quadrata', sans-serif;">
+      <font color="yellow">
+        <marquee direction="right" loop="90">WELCOME TO TOP UP SITE!</marquee>
+      </font>
+    </p>
+  </h1>
+
+  <h2>
+    <center>
+      <p style="font-family: 'Press Start 2P', cursive; color: white;">
+        <font color="white"></font>
+      </p>
+    </center>
+  </h2>
+
+  <h3 style="text-align: center;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <div>
+        <a href="https://www.codashop.com/en-ph" style="text-decoration: none;">
+          <button class="animated-button" style="background-color: #000000; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHm4quG-HK6WDrSwkPpZEWkwkxa4NwWwJTw&usqp=CAU" alt="Your Logo" style="width: 200px;" />
+          </button>
+        </a>
+      </div>
+      <div class="left-animation">
+        <a href="https://www.codashop.com/en-ph/mobile-legends" style="text-decoration: none;">
+          <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
+            MOBILE LEGENDS
+          </button>
+        </a>
+      </div>
+      <div class="right-animation">
+        <a href="https://www.codashop.com/en-ph/call-of-duty-mobile-shells-voucher" style="text-decoration: none;">
+          <button class="animated-button" style="background-color: #ffffff; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
+            CALL OF DUTY
+          </button>
+        </a>
+      </div>
+      <div class="left-animation">
+        <a href="https://www.codashop.com/en-ph/league-of-legends-wild-rift" style="text-decoration: none;">
+          <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
+            WILD RIFT
+          </button>
+        </a>
+      </div>
+      <div class="right-animation">
+        <a href="https://www.codashop.com/en-ph/farlight-84" style="text-decoration: none;">
+          <button class="animated-button" style="background-color: #ffffff; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
+            FARLIGHT 84
+          </button>
+        </a>
+      </div>
+      <div class="left-animation">
+        <a href="https://www.codashop.com/en-ph/clash-royale" style="text-decoration: none;">
+          <button class="animated-button" style="background-color: #808080; color: black; padding: 10px 20px; border: none; cursor: pointer; font-family: 'Press Start 2P', cursive; margin: 10px;">
+            CLASH ROYALE
+          </button>
+        </a>
+      </div>
+    </div>
+
+  <p style="color: red; font-size: 25px;"></p>
+</body>
+
+</html>
